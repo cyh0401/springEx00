@@ -14,4 +14,16 @@
 	(#{userid}, #{userpw}, #{username}, #{email})
 	</insert>
 	
+	<select id="selectMember" resultType="org.zerock.domain.MemberVO">
+	select *
+	from tbl_member
+	where userid = #{userid}		
+	</select>
+	
+	<select id="readwithPw" resultType="org.zerock.domain.MemberVO">
+	select *
+	from tbl_member
+	where userid = #{userid} and userpw = #{userpw}
+	</select>
+	
 </mapper>
