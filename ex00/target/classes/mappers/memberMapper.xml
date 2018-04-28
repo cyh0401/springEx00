@@ -20,7 +20,7 @@
 	where userid = #{userid}		
 	</select>
 	
-	<select id="readwithPw" resultType="org.zerock.domain.MemberVO">
+	<select id="readWithPw" resultType="org.zerock.domain.MemberVO">
 	select *
 	from tbl_member
 	where userid = #{userid} and userpw = #{userpw}
